@@ -40,6 +40,25 @@
   <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
 
 </head>
+<script>
+  function toggleDropdown() {
+    const dropdown = document.getElementById("customDropdown");
+    dropdown.style.display =
+      dropdown.style.display === "block" ? "none" : "block";
+  }
+
+  function selectEquipment(type) {
+    document.getElementById("customDropdown").style.display = "none";
+
+    if (type === "turmeric") {
+      document.getElementById("equipmentGrid").style.display = "grid";
+    }
+  }
+</script>
+
+
+
+
 
 <body id="top">
 
@@ -227,10 +246,9 @@
 
             <p class="label-2 section-subtitle slider-reveal">Pure Indian Goodness!</p>
 
-            <h1 class="display-1 hero-title slider-reveal" >
+            <h1 class="display-1 hero-title slider-reveal">
               Welcome To<br>
-              Shree Vitthalkrupa <br>
-              International!
+              Shree Vitthalkrupa <br> International!
             </h1>
 
 
@@ -309,7 +327,244 @@
       </section>
 
 
-     
+      <!-- <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Our Products</p>
+          <div class="section-title-container">
+            <h2 class="headline-1 section-title">Spices</h2>
+            <h2 class="headline-1 section-title">Vegetables & Fruits</h2>
+            <h2 class="headline-1 section-title">Other</h2>
+          </div>
+
+          <ul class="grid-list">
+            
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/fingers.jpg" width="100" height="100" loading="lazy" alt="Turmeric Fingers"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title">Turmeric Fingers</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/onion3.jpg" width="100" height="100" loading="lazy" alt="Onions"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title">Onions</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/egg4.jpg" width="100" height="100" loading="lazy" alt="Dry Chilies"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title">Eggs</a></h3>
+                </div>
+              </div>
+            </li>
+
+
+
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/rawturmeric.jpg" width="100" height="100" loading="lazy" alt="Lemons"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title">Raw Turmeric</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/lemon.jpg" width="100" height="100" loading="lazy" alt="Lemons"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title">Lemons</a></h3>
+                </div>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/sugar.jpg" width="100" height="100" loading="lazy" alt="Egg"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title">Sugar</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/chilli.jpg" width="100" height="100" loading="lazy" alt="Sugar"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title">Dry Chilies</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/cauliflower2.jpg" width="100" height="100" loading="lazy" alt="Sugar"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title"></a>Cauliflower</h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/gram dal.jpg" width="100" height="100" loading="lazy" alt="Sugar"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title">Gram Dal</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/caradomne.jpg" width="100" height="100" loading="lazy" alt="Sugar"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title">Cardomom</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/garlic2.jpg" width="100" height="100" loading="lazy" alt="Sugar"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title">Garlic</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/masoor.jpg" width="100" height="100" loading="lazy" alt="Sugar"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title">Masoor Dal</a></h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/ginger.jpg" width="100" height="100" loading="lazy" alt="Sugar"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title"></a>Ginger</h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/cashew3.jpg" width="100" height="100" loading="lazy" alt="Sugar"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title"></a>Cashews</h3>
+                </div>
+              </div>
+            </li>
+            <li>
+
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/rice3.jpg" width="100" height="100" loading="lazy" alt="Sugar"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title"></a>Rice</h3>
+                </div>
+              </div>
+            </li>
+            <li></li>
+            <li></li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/wheat.jpg" width="100" height="100" loading="lazy" alt="Sugar"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title"></a>Wheat</h3>
+                </div>
+              </div>
+            </li>
+            <li></li>
+            <li></li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/toor.jpg" width="100" height="100" loading="lazy" alt="Sugar"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title"></a>Toor</h3>
+                </div>
+              </div>
+            </li>
+            <li></li>
+            <li></li>
+            <li>
+              <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/soyabean1.jpg" width="100" height="100" loading="lazy" alt="Sugar"
+                    class="img-cover">
+                </figure>
+                <div class="title-wrapper">
+                  <h3 class="title-3"><a href="#" class="card-title"></a>Soyabean</h3>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        
+          <img src="./assets/images/shape-55.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-6 move-anim">
+          <img src="./assets/images/shape-9.png" width="280" height="205" loading="lazy" alt="shape"
+            class="shape shape-5">
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="300" height="335" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+        </div>
+        <p class="section-subtitle label-2"></p>
+      </section> -->
 
 
 
@@ -787,7 +1042,7 @@
                 <a href="#" class="has-before hover:shine">
                   <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
                     <video width="285" height="336" controls loading="lazy" class="img-cover">
-                      <source src="./assets/images/Soyavideo.mp4" type="video/mp4">
+                      <source src="./assets/images/soyavideo.mp4" type="video/mp4">
          
                     </video>
                   </figure>
@@ -1174,11 +1429,7 @@
 
           <h2 class="headline-1 section-title">Other </h2>
 
-          <!-- <p class="section-text">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
-                  standard dummy text ever.
-                </p> -->
-
+         
           <ul class="grid-4">
 
             <li>
@@ -1278,7 +1529,114 @@
               class="shape shape-2 move-anim">
           </ul>
       </section>
+      <!-- Agriculture Equipment Section -->
+      <!-- Agriculture Equipment Section -->
+<section class="section service bg-black-10 text-center" aria-label="equipment">
+  <div class="container">
 
+    <p class="section-subtitle label-2">Modern Tools for Better Farming</p>
+
+    <h2 class="headline-1 section-title">Agriculture Equipment</h2>
+
+    <!-- Clickable Subtitle -->
+    <p class="section-subtitle label-2"
+       style="cursor:pointer; margin-top:20px;"
+       onclick="toggleDropdown()">
+      Select Equipment
+    </p>
+
+    <!-- Custom Dropdown -->
+    <div class="custom-dropdown" id="customDropdown">
+      <div class="dropdown-option" onclick="selectEquipment('turmeric')">
+        Turmeric Equipment
+      </div>
+    </div>
+
+    <!-- Equipment Cards -->
+    <ul class="grid-4" id="equipmentGrid" style="display:none;">
+
+  <!-- Image 1 -->
+  <li>
+    <div class="service-card">
+      <a href="#" class="has-before hover:shine">
+        <figure class="card-banner img-holder" style="--width:285;--height:336;">
+          <img src="./assets/images/t-qu-1.jpg" class="img-cover" alt="Turmeric Equipment">
+        </figure>
+      </a>
+      <div class="card-content">
+        <!-- <h3 class="title-4 card-title">Turmeric Cleaning Machine</h3> -->
+      </div>
+    </div>
+  </li>
+
+  <!-- Image 2 -->
+  <li>
+    <div class="service-card">
+      <a href="#" class="has-before hover:shine">
+        <figure class="card-banner img-holder" style="--width:285;--height:336;">
+          <img src="./assets/images/t-qu-3.jpeg" class="img-cover" alt="Turmeric Equipment">
+        </figure>
+      </a>
+      <div class="card-content">
+        <!-- <h3 class="title-4 card-title">Turmeric Polishing Unit</h3> -->
+      </div>
+    </div>
+  </li>
+
+  <!-- Image 3 -->
+  <li>
+    <div class="service-card">
+      <a href="#" class="has-before hover:shine">
+        <figure class="card-banner img-holder" style="--width:285;--height:336;">
+          <img src="./assets/images/t-qu-5.jpg" class="img-cover" alt="Turmeric Equipment">
+        </figure>
+      </a>
+      <div class="card-content">
+        <!-- <h3 class="title-4 card-title">Turmeric Drying Machine</h3> -->
+      </div>
+    </div>
+  </li>
+
+  <!-- Image 4 -->
+  <li>
+    <div class="service-card">
+      <a href="#" class="has-before hover:shine">
+        <figure class="card-banner img-holder" style="--width:285;--height:336;">
+          <img src="./assets/images/t-qu-6.jpg" class="img-cover" alt="Turmeric Equipment">
+        </figure>
+      </a>
+      <div class="card-content">
+        <!-- <h3 class="title-4 card-title">Turmeric Grinding Unit</h3> -->
+      </div>
+    </div>
+  </li>
+
+  <!-- Video -->
+  <li>
+    <div class="service-card">
+      <figure class="card-banner img-holder" style="--width:285;--height:336;">
+        <video controls class="img-cover">
+          <source src="./assets/images/t-qu-v.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </figure>
+      <div class="card-content">
+        <!-- <h3 class="title-4 card-title">Turmeric Equipment Working Video</h3> -->
+      </div>
+    </div>
+  </li>
+
+</ul>
+
+     
+
+    <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy"
+      alt="shape" class="shape shape-1 move-anim">
+    <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy"
+      alt="shape" class="shape shape-2 move-anim">
+
+  </div>
+</section>
 
 
 
@@ -1379,8 +1737,7 @@
 
             <p class="label-2 section-subtitle" id="about-label">Our Story</p>
 
-            <h2 class="headline-1 section-title">Pure, Potent and Packed with Tradition!</h2>
-
+            <h2 class="headline-1 section-title">Pure, Potent and Packed with Tradition!</h2>evet
             <p class="section-text">
               Shree Vitthalkrupa International
               Established in 2015, Shree Vitthalkrupa International is a leading import-export enterprise specializing
@@ -1604,7 +1961,7 @@
                   Subhash Punjaji Ranjwe
                 </h3>
                 <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-1.jpeg" width="388" height="450" loading="lazy">
+                  <img src="./assets/images/event-1.jpg" width="388" height="450" loading="lazy">
 
                   <!-- <time class="publish-date label-2" datetime="2022-09-15">15/09/2022</time> -->
                 </div>
